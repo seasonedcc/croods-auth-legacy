@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "syntax-async-functions",
+    "transform-async-to-generator",
+    "transform-async-to-generator",
+    "transform-regenerator",
+    "transform-runtime",
+    "external-helpers"
+  ]
+}
