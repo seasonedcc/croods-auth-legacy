@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  Form - 
+  <h4
+    className="MuiTypography-root-1 MuiTypography-h4-16 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 600,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    Welcome, *BRAND NAME*, team.
+  </h4>
+  <h6
+    className="MuiTypography-root-1 MuiTypography-h6-18 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 500,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    This is our brand admin panel, you'll use this to see sales, reports, and just about anything related to your brand and DTS.
+  </h6>
+  <h6
+    className="MuiTypography-root-1 MuiTypography-h6-18 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 500,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    Let's get you set up.
+  </h6>
+  <div
+    className="MuiFormControl-root-36 MuiFormControl-fullWidth-39"
+    style={
+      Object {
+        "width": "70%",
+      }
+    }
+  >
+    <div
+      label="Insert your email"
+      name="email"
+      type="email"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <div
+      label="password"
+      name="password"
+      type="password"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <div
+      label="confirm password"
+      name="passwordConfirmation"
+      type="password"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <button
+      className="MuiButtonBase-root-66 MuiButton-root-40 MuiButton-contained-51 MuiButton-containedSecondary-53 MuiButton-raised-54 MuiButton-raisedSecondary-56"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "marginBottom": "20px",
+        }
+      }
+      tabIndex="0"
+      type="submit"
+    >
+      <span
+        className="MuiButton-label-41"
+      >
+        create account
+      </span>
+      <span
+        className="MuiTouchRipple-root-69"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`with errors renders correctly 1`] = `
+<div>
+  Form - 
+  <h4
+    className="MuiTypography-root-1 MuiTypography-h4-16 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 600,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    Welcome, *BRAND NAME*, team.
+  </h4>
+  <h6
+    className="MuiTypography-root-1 MuiTypography-h6-18 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 500,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    This is our brand admin panel, you'll use this to see sales, reports, and just about anything related to your brand and DTS.
+  </h6>
+  <h6
+    className="MuiTypography-root-1 MuiTypography-h6-18 MuiTypography-alignCenter-24"
+    style={
+      Object {
+        "fontWeight": 500,
+        "marginBottom": "20px",
+      }
+    }
+  >
+    Let's get you set up.
+  </h6>
+  <div
+    className="MuiFormControl-root-36 MuiFormControl-fullWidth-39"
+    style={
+      Object {
+        "width": "70%",
+      }
+    }
+  >
+    <div
+      label="Insert your email"
+      name="email"
+      type="email"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <div
+      label="password"
+      name="password"
+      type="password"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <div
+      label="confirm password"
+      name="passwordConfirmation"
+      type="password"
+      validate={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+    >
+      TextField - 
+    </div>
+    <p
+      className="MuiFormHelperText-root-76"
+      style={
+        Object {
+          "color": "error",
+        }
+      }
+    >
+      foo-error
+    </p>
+    <button
+      className="MuiButtonBase-root-66 MuiButton-root-40 MuiButton-contained-51 MuiButton-containedSecondary-53 MuiButton-raised-54 MuiButton-raisedSecondary-56"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "marginBottom": "20px",
+        }
+      }
+      tabIndex="0"
+      type="submit"
+    >
+      <span
+        className="MuiButton-label-41"
+      >
+        create account
+      </span>
+      <span
+        className="MuiTouchRipple-root-69"
+      />
+    </button>
+  </div>
+</div>
+`;

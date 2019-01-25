@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@reach/router": "^1.1.1",
-    "croods": "^0.7.0",
+    "@reach/router": "^1.2.1",
+    "croods": "^0.12.1",
     "croods-auth": "link:..",
     "formik": "^1.0.1",
     "prop-types": "^15.6.2",
@@ -16,6 +16,8 @@
     "react-scripts": "^1.1.4",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.5",
+    "redux-form": "^8.1.0",
+    "redux-form-validators": "^2.7.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
