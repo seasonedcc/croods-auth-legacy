@@ -11,7 +11,7 @@ export default props => {
     <SignIn
       {...props}
       component={Form}
-      redirectFunction={() => <Redirect to="/" noThrow />}
+      successRedirect={() => <Redirect to="/" noThrow />}
     />
   )
 }

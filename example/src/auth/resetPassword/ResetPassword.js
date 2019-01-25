@@ -9,7 +9,7 @@ export default props => {
     <New
       name="resetPassword"
       method="put"
-      path="/admin_auth/password"
+      path="/auth/password"
       render={({ create, creating, error }) => (
         <Form
           create={create}

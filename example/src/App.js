@@ -6,6 +6,7 @@ import { Router } from '@reach/router'
 import Home from './Home'
 import SignIn from './signIn/SignIn'
 import SignUp from './signUp/SignUp'
+import DeleteAccount from './deleteAccount/DeleteAccount'
 
 import store from './store/store'
 import './App.css'
@@ -24,6 +25,7 @@ export default props => (
             <Home {...props} path="/" />
             <SignIn {...props} path="sign-in" />
             <SignUp {...props} path="sign-up" />
+            <DeleteAccount {...props} path="delete-account" />
           </Router>
         )}
       />

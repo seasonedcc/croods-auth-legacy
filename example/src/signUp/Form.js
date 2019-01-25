@@ -63,7 +63,7 @@ export default reduxForm({ form: 'signUp' })(props => {
           style={{ marginTop: 10, fontSize: 40 }}
           onPress={handleSubmit(create)}
         >
-          login
+          Register
         </button>
       </form>
     </div>
