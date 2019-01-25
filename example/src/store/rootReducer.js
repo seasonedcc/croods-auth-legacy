@@ -6,6 +6,4 @@ import { reducer as formReducer } from 'redux-form'
 export default combineReducers({
   auth: createReducer(),
   form: formReducer,
-  signIn: croodsCreate('signIn'),
-  currentUser: croodsCreate('currentUser'),
 })

@@ -5,7 +5,7 @@ import Created from '../Created'
 
 export default props => {
   const {
-    relativePath = '/auth/sign_in',
+    relativePath = '/auth',
     component: Component,
     redirectFunction,
     currentUser,
@@ -14,7 +14,7 @@ export default props => {
 
   return (
     <New
-      name="auth.signIn"
+      name="auth.signUp"
       path={relativePath}
       parseResponse={({ data }) => ({ created: data })}
       render={({ create, creating, error }) => {

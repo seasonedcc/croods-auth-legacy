@@ -6,7 +6,7 @@ import Created from '../Created'
 export default props => (
   <New
     name="signUp"
-    path="/admin_auth"
+    path="/auth"
     parseResponse={({ data }) => ({ created: data })}
     render={({ create, creating, error }) => {
       return <Form create={create} creating={creating} createError={error} />
