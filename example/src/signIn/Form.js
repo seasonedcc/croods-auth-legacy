@@ -2,6 +2,7 @@ import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { email, required, length } from 'redux-form-validators'
 import { Link } from '@reach/router'
+import { SignInHOC } from 'croods-auth'
 
 export default reduxForm({ form: 'signIn' })(props => {
   const { handleSubmit, create, creating } = props
@@ -61,3 +62,5 @@ export default reduxForm({ form: 'signIn' })(props => {
     </div>
   )
 })
+
+// export default SignInHOC({})(Form)

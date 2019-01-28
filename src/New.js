@@ -7,20 +7,26 @@ export default props => {
   const {
     name,
     path,
+    method = 'post',
     component: Component,
     successRedirect,
     currentUser,
     setCurrentUser,
+    otherProps,
+    defaultParse,
   } = props
-
   return (
     <New
       name={name}
       path={path}
-      parseResponse={({ data }) => ({ created: data })}
+      method={method}
+      parseResponse={
+        defaultParse ? undefined : ({ data }) => ({ created: data })
+      }
       render={({ create, creating, error }) => {
         return (
           <Component
+            {...otherProps}
             currentUser={currentUser}
             setCurrentUser={setCurrentUser}
             create={create}
