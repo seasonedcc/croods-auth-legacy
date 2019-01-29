@@ -10,7 +10,7 @@ export default class extends Component {
   }
 
   render() {
-    const { redirect: Redirect } = this.props
-    return <Redirect />
+    const { render, ...props } = this.props
+    return render(props)
   }
 }
