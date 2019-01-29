@@ -10,7 +10,7 @@ export default class extends Component {
   }
 
   render() {
-    const { successRedirect: Redirect } = this.props
-    return Redirect ? <Redirect /> : null
+    const { renderDestroyed = () => null, ...props } = this.props
+    return renderDestroyed(props)
   }
 }

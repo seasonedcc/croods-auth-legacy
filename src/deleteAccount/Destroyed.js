@@ -10,7 +10,7 @@ export default class extends Component {
   }
 
   render() {
-    const { renderDestroyed } = this.props
-    return renderDestroyed()
+    const { renderDestroyed = () => null, ...props } = this.props
+    return renderDestroyed(props)
   }
 }
