@@ -11,7 +11,7 @@ export default props => {
     <SignIn
       {...props}
       render={({ create, creating, error }) => (
-        <Form create={create} creating={creating} error={error} />
+        <Form create={create} creating={creating} CreateError={error} />
       )}
       renderCreated={() => <Redirect to="/" noThrow />}
     />
