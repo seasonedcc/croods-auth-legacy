@@ -5,8 +5,5 @@ export default props => (destroy, { destroying, destroyed }) => {
   if (destroyed) {
     return <Destroyed {...props} />
   }
-
-  const { component: Component } = props
-
-  return <Component {...props} destroying={destroying} destroy={destroy} />
+  return props.render({ ...props, destroy, destroying })
 }
