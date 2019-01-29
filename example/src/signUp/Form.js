@@ -1,7 +1,6 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { email, required, length } from 'redux-form-validators'
-import { Link } from '@reach/router'
 
 export default reduxForm({ form: 'signUp' })(props => {
   const { handleSubmit, create, creating } = props
@@ -54,6 +53,8 @@ export default reduxForm({ form: 'signUp' })(props => {
           validate={[required(), length({ min: 8 })]}
           component="input"
         />
+
+        {error && <div style={{ color: 'red' }}>error</div>}
 
         <button
           type="submit"
