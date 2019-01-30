@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  New - 
+   - 
+  <div
+    foo="bar"
+    method="put"
+    name="auth.Test"
+    path="/auth/test"
+    render={[Function]}
+    renderCreated={[Function]}
+    user={
+      Object {
+        "foo": "bar",
+      }
+    }
+  >
+    Created - 
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div>
+  New - 
+   - 
+  <div
+    foo="bar"
+    name="auth.Test"
+    path="/auth/test"
+    render={[Function]}
+    renderCreated={[Function]}
+    user={
+      Object {
+        "foo": "bar",
+      }
+    }
+  >
+    Created - 
+  </div>
+</div>
+`;
