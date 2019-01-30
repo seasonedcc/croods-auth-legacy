@@ -74,6 +74,7 @@
     "dist"
   ],
   "dependencies": {
-    "croods": "^0.12.1"
+    "croods": "^0.12.1",
+    "redux": "^4.0.1"
   }
 }
