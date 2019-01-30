@@ -1,10 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div>
+<div
+  method="put"
+  name="auth.Test"
+  parseResponse={undefined}
+  path="/auth/test"
+  render={[Function]}
+  renderCreated={[Function]}
+>
   New - 
    - 
   <div
+    defaultParse={true}
     foo="bar"
     method="put"
     name="auth.Test"
@@ -23,7 +31,14 @@ exports[` 1`] = `
 `;
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  method="post"
+  name="auth.Test"
+  parseResponse={[Function]}
+  path="/auth/test"
+  render={[Function]}
+  renderCreated={[Function]}
+>
   New - 
    - 
   <div
