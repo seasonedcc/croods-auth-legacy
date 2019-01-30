@@ -75,6 +75,7 @@
   ],
   "dependencies": {
     "croods": "^0.12.1",
+    "react-redux": "^6.0.0",
     "redux": "^4.0.1"
   }
 }
