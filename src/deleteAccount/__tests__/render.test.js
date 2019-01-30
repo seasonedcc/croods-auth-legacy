@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import render from '../render'
 
-jest.mock('../Destroyed', () => props => <div {...props}> Destroyed</div>)
+jest.mock('../../Destroyed', () => props => <div {...props}> Destroyed</div>)
 
 it('renders correctly', () => {
   const tree = renderer.create(render({ render: jest.fn() })(null, {})).toJSON()
