@@ -4,6 +4,10 @@ global.localStorage = {
   setItem: jest.fn(),
 }
 
+afterEach(() => {
+  jest.clearAllMocks()
+})
+
 describe('with accessToken', () => {
   it('stores credentials', () => {
     const headers = {
@@ -22,5 +26,17 @@ describe('with accessToken', () => {
         uid: 'foo uid',
       }),
     )
+  })
+})
+
+describe('without accessToken', () => {
+  it('DOES NOT stores credentials', () => {
+    const headers = {
+      get: () => undefined,
+    }
+    const response = { headers }
+
+    afterResponse(response)
+    expect(global.localStorage.setItem).not.toHaveBeenCalled()
   })
 })
