@@ -1,7 +1,6 @@
 import React from 'react'
 import { Info } from 'croods'
 
-import parseResponse from './parseResponse'
 import render from './render'
 
 export default props => (
@@ -11,7 +10,7 @@ export default props => (
     path="/auth/validate_token"
     renderError={false}
     renderLoading={false}
-    parseResponse={parseResponse}
+    parseResponse={({ data }) => ({ info: data })}
     render={render(props)}
   />
 )
