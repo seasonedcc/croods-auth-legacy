@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `null`;
+
+exports[`when destroyed renders correctly 1`] = `
+<div
+  render={[Function]}
+  setCurrentUser={[Function]}
+>
+   Destroyed
+</div>
+`;
