@@ -6,7 +6,7 @@ global.localStorage = {
   removeItem: jest.fn(),
 }
 
-it('', () => {
+it('calls remove item', () => {
   const setCurrentUser = jest.fn()
   const props = { setCurrentUser }
 
