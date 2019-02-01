@@ -1,9 +1,10 @@
+import { setAsyncStorage } from '../asyncStorage'
 import responseCredentials from './responseCredentials'
 
-export default response => {
+export default async response => {
   const newCredentials = responseCredentials(response)
 
   if (newCredentials.accessToken) {
-    localStorage.setItem('authCredentials', JSON.stringify(newCredentials))
+    await setAsyncStorage('authCredentials', newCredentials)
   }
 }

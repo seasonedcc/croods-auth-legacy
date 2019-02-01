@@ -1091,6 +1091,13 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@callstack/async-storage@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@callstack/async-storage/-/async-storage-1.1.0.tgz#f7d66c7b330bf5eba65dfb3c236f62cbf4aa42b0"
+  integrity sha1-99ZsezML9eumXfs8I29iy/SqQrA=
+  dependencies:
+    lodash.merge "^4.6.0"
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -5792,6 +5799,11 @@ lodash.defaults@^4.2.0:
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+
+lodash.merge@^4.6.0:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
+  integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
 
 lodash.template@^4.4.0:
   version "4.4.0"
