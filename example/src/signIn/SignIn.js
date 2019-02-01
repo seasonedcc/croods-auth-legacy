@@ -1,6 +1,6 @@
 import React from 'react'
 import { SignIn } from 'croods-auth'
-import { navigate, Redirect } from '@reach/router'
+import { Redirect } from '@reach/router'
 
 import Form from './Form'
 

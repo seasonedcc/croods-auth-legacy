@@ -13,8 +13,6 @@ import ResetPassword from './resetPassword/ResetPassword'
 
 import store from './store/store'
 import './App.css'
-import SignInOrSignUp from './SignInOrSignUp'
-import CurrentUser from './CurrentUser'
 // baseUrl="https://croods-auth-api.herokuapp.com/"
 
 export default props => (
