@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  id="currentUser"
+  name="auth.deleteAccount"
+  parseDestroyResponse={[Function]}
+  path="/auth"
+  render={[Function]}
+>
+  Destroy - 
+  <div
+    destroy={
+      Object {
+        "id": "currentUser",
+        "name": "auth.deleteAccount",
+        "parseDestroyResponse": [Function],
+        "path": "/auth",
+        "render": [Function],
+      }
+    }
+    foo="bar"
+  >
+    renderDestroy
+  </div>
+</div>
+`;

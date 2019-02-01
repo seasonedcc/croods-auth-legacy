@@ -19,11 +19,12 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "croods": "^0.7.0",
+    "croods": "^0.12.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
     "prop-types": "^15.5.4",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "redux": "^4.0.0"
+    "react-dom": "^16.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -61,6 +62,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
+    "react-test-renderer": "^16.7.0",
     "rollup": "^0.62.0",
     "rollup-plugin-babel": "^4.0.1",
     "rollup-plugin-commonjs": "^9.1.3",

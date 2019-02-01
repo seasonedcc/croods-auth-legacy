@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  Options - 
+  <div
+    reducer="auth"
+    renderLoading={[Function]}
+  >
+    CurrentUser -
+     
+    <div>
+      render
+    </div>
+  </div>
+</div>
+`;

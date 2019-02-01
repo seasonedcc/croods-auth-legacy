@@ -1,5 +1,5 @@
 import React from 'react'
-import Destroyed from './Destroyed'
+import Destroyed from '../Destroyed'
 
 export default ({ render, ...props }) => (
   destroy,

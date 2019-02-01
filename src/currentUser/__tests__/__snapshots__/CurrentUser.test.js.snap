@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  id="currentUser"
+  name="auth.currentUser"
+  parseResponse={[Function]}
+  path="/auth/validate_token"
+  render={[Function]}
+  renderError={false}
+  renderLoading={false}
+>
+  <div
+    foo="bar"
+    id="currentUser"
+    name="auth.currentUser"
+    parseResponse={[Function]}
+    path="/auth/validate_token"
+    reducer="auth"
+    render={[Function]}
+    renderError={false}
+    renderLoading={false}
+  >
+    renderInfo
+  </div>
+</div>
+`;
