@@ -1,17 +1,15 @@
 import React from 'react'
-import { SignUp } from 'croods-auth'
+import { ResetPassword } from 'croods-auth'
 import { Redirect } from '@reach/router'
-
 import Form from './Form'
 
 export default props => {
-  if (props.currentUser) return <Redirect to="/" noThrow />
-
   return (
-    <SignUp
+    <ResetPassword
       {...props}
       component={Form}
-      successRedirect={() => <Redirect to="/" noThrow />}
+      successRedirect={() => <Redirect to="/sign-in" noThrow />}
+      location={props.location}
     />
   )
 }

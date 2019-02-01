@@ -7,4 +7,7 @@ export default (prefix = 'auth') =>
     signUp: createReducer(`${prefix}.signUp`),
     signIn: createReducer(`${prefix}.signIn`),
     signOut: createReducer(`${prefix}.signOut`),
+    deleteAccount: createReducer(`${prefix}.deleteAccount`),
+    password: createReducer(`${prefix}.password`),
+    resetPassword: createReducer(`${prefix}.resetPassword`),
   })

@@ -1,13 +1,17 @@
 import React from 'react'
+import { SignIn } from 'croods-auth'
+import { navigate, Redirect } from '@reach/router'
 
-export default ({ onSignUp }) => (
-  <div>
-    <h1>Sign in</h1>
-    <p>
-      {"Don't have an account? "}
-      <a href="#sign_up" onClick={onSignUp}>
-        Sign up
-      </a>.
-    </p>
-  </div>
-)
+import Form from './Form'
+
+export default props => {
+  // if (props.currentUser) return <Redirect to="/" noThrow />
+
+  return (
+    <SignIn
+      {...props}
+      component={Form}
+      successRedirect={() => <Redirect to="/" noThrow />}
+    />
+  )
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+      "marginTop": "20vh",
+      "width": "100%",
+    }
+  }
+>
+  <h2>
+    We sent you an email with instructions to reset your password
+  </h2>
+</div>
+`;

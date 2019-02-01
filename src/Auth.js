@@ -13,7 +13,7 @@ export default ({ render, reducer = 'auth', renderLoading, ...props }) => (
         }
         reducer={reducer}
         render={(currentUser, { actions: { setInfo: setCurrentUser } }) =>
-          render({ currentUser, setCurrentUser })
+          render({ currentUser, setCurrentUser, reducer })
         }
       />
     )}

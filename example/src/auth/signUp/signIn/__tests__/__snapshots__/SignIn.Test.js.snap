@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  name="signIn"
+  parseResponse={[Function]}
+  path="/admin_auth/sign_in"
+  render={[Function]}
+  renderCreated={[Function]}
+>
+  New - 
+  <div>
+    Form
+  </div>
+   - Created
+  <div
+    setCurrentUser={[MockFunction]}
+    user={
+      Array [
+        Object {
+          "email": "foo",
+        },
+      ]
+    }
+  >
+    Created
+  </div>
+</div>
+`;
+
+exports[`when no currentUser redirect 1`] = `
+<div
+  noThrow={true}
+  to="/dashboard"
+>
+  Redirect
+</div>
+`;
+
+exports[`with an user already logged in renders a redirect 1`] = `
+<div
+  noThrow={true}
+  to="/dashboard"
+>
+  Redirect
+</div>
+`;
