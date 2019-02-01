@@ -7,9 +7,15 @@ export default props => {
   return (
     <ResetPassword
       {...props}
-      component={Form}
-      successRedirect={() => <Redirect to="/sign-in" noThrow />}
-      location={props.location}
+      render={({ create, creating, error }) => (
+        <Form
+          {...props}
+          create={create}
+          creating={creating}
+          createError={error}
+        />
+      )}
+      renderCreated={() => <Redirect to="/sign-in" noThrow />}
     />
   )
 }

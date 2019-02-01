@@ -18,7 +18,6 @@ export default reduxForm({ form: 'signIn' })(props => {
       }}
     >
       <form
-        {...props}
         style={{
           marginTop: 100,
           display: 'flex',
@@ -33,7 +32,7 @@ export default reduxForm({ form: 'signIn' })(props => {
           style={{ width: 600, fontSize: 30 }}
           type="email"
           name="email"
-          placeHolder="Insert your email"
+          placeholder="Insert your email"
           validate={[required(), email()]}
           component="input"
         />
@@ -41,7 +40,7 @@ export default reduxForm({ form: 'signIn' })(props => {
           style={{ width: 600, fontSize: 30 }}
           type="password"
           name="password"
-          placeHolder="password"
+          placeholder="password"
           validate={[required(), length({ min: 8 })]}
           component="input"
         />
@@ -54,7 +53,6 @@ export default reduxForm({ form: 'signIn' })(props => {
           color="secondary"
           disabled={creating}
           style={{ marginTop: 10, fontSize: 40 }}
-          onPress={handleSubmit(create)}
         >
           login
         </button>
@@ -62,5 +60,3 @@ export default reduxForm({ form: 'signIn' })(props => {
     </div>
   )
 })
-
-// export default SignInHOC({})(Form)

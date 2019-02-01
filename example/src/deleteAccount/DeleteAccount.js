@@ -5,13 +5,13 @@ import { Redirect } from '@reach/router'
 import Button from './Button'
 
 export default props => {
-  if (!props.currentUser) return <Redirect to="/" noThrow />
-
   return (
     <DeleteAccount
       {...props}
-      component={Button}
-      successRedirect={() => <Redirect to="/" noThrow />}
+      render={({ destroy, destroying }) => (
+        <Button {...props} destroy={destroy} destroying={destroying} />
+      )}
+      renderDestroyed={() => <Redirect to="/" noThrow />}
     />
   )
 }

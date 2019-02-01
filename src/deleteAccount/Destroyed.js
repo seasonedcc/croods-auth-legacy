@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export default class extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class extends Component {
   }
 
   render() {
-    const { successRedirect: Redirect } = this.props
-    return Redirect ? <Redirect /> : null
+    const { renderDestroyed = () => null, ...props } = this.props
+    return renderDestroyed(props)
   }
 }

@@ -5,13 +5,15 @@ import { Redirect } from '@reach/router'
 import Form from './Form'
 
 export default props => {
-  // if (props.currentUser) return <Redirect to="/" noThrow />
+  if (props.currentUser) return <Redirect to="/" noThrow />
 
   return (
     <SignIn
       {...props}
-      component={Form}
-      successRedirect={() => <Redirect to="/" noThrow />}
+      render={({ create, creating, error }) => (
+        <Form create={create} creating={creating} CreateError={error} />
+      )}
+      renderCreated={() => <Redirect to="/" noThrow />}
     />
   )
 }

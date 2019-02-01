@@ -8,12 +8,12 @@ export default props => {
     name,
     path,
     method = 'post',
-    component: Component,
-    successRedirect,
     currentUser,
     setCurrentUser,
-    otherProps,
     defaultParse,
+    render,
+    renderCreated,
+    ...otherProps
   } = props
   return (
     <New
@@ -24,19 +24,17 @@ export default props => {
         defaultParse ? undefined : ({ data }) => ({ created: data })
       }
       render={({ create, creating, error }) => {
-        return (
-          <Component
-            {...otherProps}
-            currentUser={currentUser}
-            setCurrentUser={setCurrentUser}
-            create={create}
-            creating={creating}
-            error={error}
-          />
-        )
+        return render({
+          create,
+          creating,
+          error,
+          currentUser,
+          setCurrentUser,
+          ...otherProps,
+        })
       }}
       renderCreated={created => (
-        <Created {...props} redirect={successRedirect} user={created} />
+        <Created {...props} render={renderCreated} user={created} />
       )}
     />
   )

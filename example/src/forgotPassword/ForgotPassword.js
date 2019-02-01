@@ -8,8 +8,15 @@ export default props => {
   return (
     <ForgotPassword
       {...props}
-      component={Form}
-      successRedirect={() => <Redirect to="/forgot-password/sent" noThrow />}
+      render={({ create, creating, error }) => (
+        <Form
+          {...props}
+          create={create}
+          creating={creating}
+          createError={error}
+        />
+      )}
+      renderCreated={() => <Redirect to="/forgot-password/sent" noThrow />}
     />
   )
 }
