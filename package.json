@@ -19,7 +19,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "croods": "^0.12.1",
+    "croods": "^0.13.1",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "prop-types": "^15.5.4",
